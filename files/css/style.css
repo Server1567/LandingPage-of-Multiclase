@@ -1,0 +1,206 @@
+/*
+Description: © Multiclase, imagina, aprende y crea
+Version: 1
+Author: Junior Jimenez(Server1567) - Front-End Developer
+Author URL: https://server1567.herokuapp.com
+*/
+
+/* Not allow Scroll at the Screen */
+
+.no_scroll {
+    overflow: hidden;
+}
+
+.card-panel {
+    border-radius: 0 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div #body {
+    flex: 1 0 auto;
+}
+
+#caption-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.lets_go {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    width: 17%;
+    color: lightblue;
+}
+
+.lets_go:hover {
+    color: cyan;
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 100px 0px !important;
+}
+
+.team-card {
+    width: 250px !important;
+    top: 100px !important;
+}
+
+.worker {
+    margin: 0 !important;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 100px 0px;
+}
+
+/* Little Content */
+
+#little-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.little-content {
+    margin: 10px;
+}
+
+.little-content:hover {
+    color: gray;
+}
+
+.new-add {
+    color: darkgray;
+}
+
+.section-little-content {
+    list-style: none;
+}
+
+.section-little-content-li {
+    display: inline-block;
+}
+
+/* CONTACT */
+
+form {
+    width: 50% !important;
+    margin: auto;
+}
+
+
+/* FOOTER */
+/* Area de Redes Sociales */
+
+.facebook, .twitter, .instagram {
+    display: inline-block;
+    font-style:27px;
+    font-size: 29px;
+    width: 52px;
+    height: 50px;
+    font-line:20px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+}
+
+.facebook:hover {
+    color: #2b416f;
+}
+
+.twitter:hover {
+    color: #3f82b1;
+}
+
+.instagram:hover {
+    color: purple;
+}
+
+.facebook { background: #3B5998; margin: 15px 15px 15px 0px; }
+.twitter { background: #55ACEE; margin: 15px 15px 15px 0px; }
+.instagram { 
+    background: linear-gradient(60deg, #3051F1 10%, #C92BB7 60%);
+    margin: 15px 15px 15px 0px; 
+}
+
+
+/********** MEDIA QUERIES ***********/
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px){
+    .brand-logo {
+        text-align: left;
+    }
+
+    form {
+        width: 50% !important;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+    .brand-logo {
+        text-align: center;
+    }
+
+    .lets_go {
+        width: 30%;
+    }
+
+    form {
+        width: 90% !important;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px){
+    .brand-logo {
+        text-align: center;
+    }
+
+    img .b-logo {
+        width: 40%;
+        padding: 5px;
+    }
+
+    .lets_go {
+        width: 50%;
+    }
+
+    form {
+        width: 90% !important;
+    }
+}

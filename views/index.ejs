@@ -1,0 +1,365 @@
+<!--
+	Description: © Multiclase, imagina, aprende y crea
+	Version: 1
+	Author: Junior Jimenez(Server1567) - Front-End Developer
+	Author URL: https://server1567.herokuapp.com
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<!-- META TAGS -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- SEO -->
+
+    <meta property="og:url" content="https://multiclase.com">
+    <meta property="og:site_name" content="Multiclase">
+    <meta property="og:title" content="Multiclase, el aprendizaje es gratis.">
+    <meta property="og:description" content="Somos una plataforma que tiene como función llevar un aprendizaje de manera veraz y gratuito.">
+    <meta property="og:image" content="res/multiclase_logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta name="keywords" content="educacion, multiclase, gratis, tecnologia, html"/>
+
+	<title>Multiclase</title>
+	<link rel="icon" type="img/png" href="http://multiclase.com/18945161_1389611487783304_1968962958_n.ico">
+	<link rel="stylesheet" href="/files/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/files/fonts/material-icons.css">
+	<link rel="stylesheet" href="/files/css/materialize.min.css">
+	<link rel="stylesheet" href="/files/css/style.css">
+
+</head>
+<body id="bodyScroll">
+
+<!-- WEBSITE PRESENTATION -->
+
+<div class="slider fullscreen" id="body">
+	<ul class="slides" id="imgPresentationID">
+		<li>
+			<img src="/files/res/tablet.jpg" alt="Multiclase-presentation">
+			<div class="caption left-align" id="caption-img">
+				<div style="width: 300px; height: 132px;">
+					<img class="responsive-img" src="/files/res/multiclase_logo.png" alt="Multiclase-logo" width="100%">
+				</div>
+				<h5 class="light grey-text text-lighten-3">El aprendizaje es gratis</h5>
+				<span style="display: contents;">
+					<a href="#header" style="display: contents;" onclick="fix_navBar()">
+						<div class="lets_go">
+							<i class="medium material-icons left" style="margin-right: 0;">expand_more</i>
+							Let's go!
+						</div>
+					</a>
+				</span>
+			</div>
+		</li>
+	</ul>
+
+	<!-- MAIN CONTENT | CONTENIDO DE LA WEB -->
+
+	<main>
+		<header id="header" class="scrollspy">  <!-- HEADER -->
+			<div id="magic">
+				<nav class="indigo accent-4">
+					<div class="nav-wrapper">
+						<a href="http://multiclase.com/" class="brand-logo" style="margin-left: 2%;">
+							<img class="img-responsive b-logo" src="/files/res/multiclase_logo.png" alt="Multiclase-logo" style="width: 50%; padding: 5px;">
+						</a>
+						<ul id="nav-mobile" class="right hide-on-med-and-down">
+							<li onclick="get_started(3000)"><a href="#">TEMAS</a></li>
+							<li><a href="#contact">CONTACTO</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- LANDING PAGE'S CONTENT -->
+
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br><br>
+				<h1 class="header center amber-text text-darken-1">Multiclase está aquí</h1>
+				<div class="row center">
+					<h5 class="header col s12 light">Una plataforma de aprendizaje que está al alcanze de tus manos <em>GRATIS!</em></h5>
+				</div>
+				<div class="row center">
+					<a href="#" id="download-button" class="btn-large waves-effect waves-light amber darken-1" onclick="get_started(3000)">empezar</a>
+				</div>
+				<br><br>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="section">
+				<!--   Icon Section   -->
+				<div class="row">
+					<div class="col s12 m4">
+						<div class="icon-block">
+							<h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+							<h5 class="center">Rapidez en aprender</h5>
+
+							<p class="light">
+								Multiclase © está construida con una interfaz agrade paara el usuario siendo compatible con cada una de las pantallas de SmarthPhones y Tabletas, además es rápida de acceder con cualquier navegador, esceptuando las versiones anteriores de IE.
+							</p>
+						</div>
+					</div>
+
+					<div class="col s12 m4">
+						<div class="icon-block">
+							<h2 class="center light-blue-text"><i class="material-icons">phonelink</i></h2>
+							<h5 class="center">Fácil de usar</h5>
+
+							<p class="light">
+								La interfaz de usuario de Multiclase © hace que tengas una experiencia de uducación eficaz, y no sólo eso, esa experiencia se refleja en que cada de los diferentes dispositivos manteniedo la experiencia de educación del usuario.
+							</p>
+						</div>
+					</div>
+
+					<div class="col s12 m4">
+						<div class="icon-block">
+							<h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+							<h5 class="center">Tu lo construyes</h5>
+
+							<p class="light">
+								Así es, Multiclase © es una plataforma que los creadores no pueden con todo, por lo que hemos integrado un área para nos contactes, si quieres cambiar algo en la interfaz en algún contenido, ORDÉNALO Y SE HARÁ TU VOLUNTAD.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+
+		<!-- Imagen de Promoción -->
+
+		<div class="card" style="margin: 0;" id="image">
+			<div class="card-image">
+				<img class="responsive-img worker" src="/files/res/most-people.jpg">
+				<span class="card-title hide-on-med-and-down" style="top: 0 !important; margin-top: 147px;">
+					Multiclase se adapta a tu trabajo
+				</span>
+				<span class="card-title hide-on-med-and-down" style="top: 0 !important; margin-top: 190px; font-size: 16px;">
+					No importa donde estés siempre estaremos ahí para nos utilizes.
+				</span>
+				<span class="card-title hide-on-med-and-down" style="top: 0 !important; margin-top: 227px; font-size: 16px;">
+					<a href="#" class="btn waves-effect waves-dark tiny" onclick="get_started(3000)">Empezar</a>
+				</span>
+			</div>
+		</div>
+		<div class="card-panel z-depth-0 row grey darken-3 white-text hide-on-large-only" style="margin: 0 !important; padding: 50px 0px;" id="image2">
+			<h4 style="text-align: center;">Multiclase se adapta a tu trabajo</h4>
+			<p style="text-align: center;">
+				No importa donde estés siempre estaremos ahí para nos utilizes.
+			</p>
+			<center>
+				<a href="#" class="btn waves-effect waves-dark tiny black-text white" onclick="get_started(3000)">Empezar</a>
+			</center>
+		</div>
+
+
+		<div class="card-panel z-depth-0 row" id="little-content">
+			<h4 style="font-weight: 200;">Nuestro contenido</h4>
+			<h6>Esto en una pequeña parte de lo que tenemos para tí.</h6>
+
+			<!-- Sección de contenido | pequeña parte -->
+			<section>
+				<ul id="section-little-content">
+					<li class="section-little-content-li">
+						<button class="btn-flat waves-effect waves-teal little-content" onclick="get_started(3000)">Informática</button>
+					</li>
+				</ul>
+			</section>
+
+			<p class="new-add"><i class="material-icons left">info</i>Pronto estaremos añadiendo nuevos temas</p>
+
+			<!-- Button Ver Mas -->
+			<br><br>
+			<button class="btn waves-effect waves-dark cyan hide">Ver más</button>
+		</div>
+
+		<!-- Team de Desarrollo -->
+
+		<div class="card-panel z-depth-0 row grey lighten-1 team" id="team">
+			<h4 style="font-weight: 200;">Nuestro Equipo</h4>
+			<h6>Conoce cada uno de los integrantes de nuestro equipo, si quieres puedes <em>unirte.</em></h6>
+
+			<div class="carousel">
+				<div class="carousel-item" style="height: 450px;">
+					<div class="card team-card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img src="/files/res/team/frederick.jpg" class="activator responsive-img" style="height: 200px !important;">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Frederick Jimenez<i class="material-icons right">more_vert</i></span>
+							<p><a href="https://www.facebook.com/tiienenQsoportarme">Facebook</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Frederick Jimenez<i class="material-icons right">close</i></span>
+							<p>
+								Co-Fundador de Multiclase © y uno de los CEO principales de la plataforma.
+							</p>
+							<p>
+								Visita su cuenta de <a href="https://www.facebook.com/tiienenQsoportarme">Facebook</a> para saber más.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="card team-card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img src="/files/res/team/junior.jpg" class="activator responsive-img" style="height: 200px !important;">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Junior Jimenez<i class="material-icons right">more_vert</i></span>
+							<p><a href="http://server1567.herokuapp.com/">Website</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Junior Jimenez<i class="material-icons right">close</i></span>
+							<p>
+								Es un Front-End Developer externo(no perteneciente al Equipo) pero es el Diseñador de la Plataforma en si Interfaz.</p>
+							<p>
+								Visita su <a href="http://server1567.herokuapp.com/">sitio web</a> para saber más.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="card team-card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img src="/files/res/team/hamlet.jpg" class="activator responsive-img" style="height: 200px !important;">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Hamlet Vidal<i class="material-icons right">more_vert</i></span>
+							<p><a href="https://www.facebook.com/Doctor1104">Facebook</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Hamlet Vidal<i class="material-icons right">close</i></span>
+							<p>
+								Co-Fundador de Multiclase © y uno de los CEO principales de la plataforma.
+							</p>
+							<p>
+								Visita su cuenta de <a href="https://www.facebook.com/Doctor1104">Facebook</a> para saber más.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CONTACT -->
+
+		<div class="card-panel z-depth-0 row indigo darken-2 contact scrollspy" id="contact">
+			<h4>CONTACTO</h4>
+			<h6>Pregunta o pide lo que quieras, estamos para escucharte.</h6>
+			<form action="#" class="col s12" method="POST" style="padding-top: 10px;">
+				<div class="input-field">
+					<input type="email" id="email" class="validate">
+					<label for="email"><i class="material-icons left">email</i>Email</label>
+				</div>
+				<div class="input-field">
+					<textarea id="message" class="materialize-textarea"></textarea>
+					<label for="message"><i class="material-icons left">message</i>Mensaje</label>
+				</div>
+				<center>
+					<button type="submit" class="btn waves-effect waves-dark cyan darken-3" onclick="send_error(3000)">
+						Enviar
+						<i class="material-icons right">send</i>
+					</button>
+				</center>
+
+			</form>
+		</div>
+
+		<!-- FOOTER | PIE DE PÁGINA -->
+
+		<footer class="page-footer indigo darken-3">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Quienes somos?</h5>
+						<p class="grey-text text-lighten-4">
+							Somos una plataforma de aprendizaje para que puedas buscar tus tareas escolares, si algo no lo tenemos, ponlo para que esto crezca.
+						</p>
+						<p>
+							Todo al alcanze de tus manos.
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Redes Sociales</h5>
+						<ul>
+							<li style="display: inline-block;">
+								<a href="https://www.facebook.com/Multiclase-1438328912877197/" class="facebook"><span class="fa fa-facebook" style="font-size: 30px; padding: 8px;"></span></a>
+							</li>
+							<li style="display: inline-block;">
+								<a href="https://www.instagram.com/multiclase.oficial/" class="instagram"><span class="fa fa-instagram" style="font-size: 30px; padding: 6px;"></span></a>
+							</li>
+							<li style="display: inline-block;" class="hide">
+								<a href="#" class="twitter"><span class="fa fa-twitter" style="font-size: 30px; padding: 6px;"></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					Multiclase &copy; 2017
+					<!-- En los Términos pondré un Modal -->
+					<a href="#terms" class="grey-text text-lighten-4 right">Términos y Condiciones</a>
+
+					 <!-- Terminos y Condiciones -->
+					<div id="terms" class="modal modal-fixed-footer">
+						<div class="modal-content black-text">
+							<h4 style="font-weight: 200; text-align: center;">Términos y Condiciones</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fuga, molestiae natus eius dolor esse ipsam? Facere eos magni eius nam, minus reiciendis laboriosam voluptates explicabo assumenda saepe necessitatibus sequi porro laborum, optio dicta quas cumque odit officiis accusantium suscipit quod illo minima perferendis maxime neque! Ex nostrum maiores ab!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, similique quam rem explicabo tempore delectus praesentium molestias harum! Beatae quia delectus temporibus ad inventore doloribus aperiam ratione dolorem, laudantium suscipit nihil magni tempore blanditiis quis dolor voluptatem nostrum eius recusandae quisquam nulla. Accusamus quas, aut atque facere, quo laboriosam voluptate ab nesciunt neque harum mollitia saepe cupiditate fuga molestiae enim, reiciendis! Sed eius ab, minima ipsam. Atque, quaerat iste eos!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ea numquam laboriosam libero magnam officiis, placeat, beatae assumenda illum soluta quod repellendus facere. Quam perspiciatis quidem totam, provident alias unde?
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsa.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fuga, molestiae natus eius dolor esse ipsam? Facere eos magni eius nam, minus reiciendis laboriosam voluptates explicabo assumenda saepe necessitatibus sequi porro laborum, optio dicta quas cumque odit officiis accusantium suscipit quod illo minima perferendis maxime neque! Ex nostrum maiores ab!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, similique quam rem explicabo tempore delectus praesentium molestias harum! Beatae quia delectus temporibus ad inventore doloribus aperiam ratione dolorem, laudantium suscipit nihil magni tempore blanditiis quis dolor voluptatem nostrum eius recusandae quisquam nulla. Accusamus quas, aut atque facere, quo laboriosam voluptate ab nesciunt neque harum mollitia saepe cupiditate fuga molestiae enim, reiciendis! Sed eius ab, minima ipsam. Atque, quaerat iste eos!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ea numquam laboriosam libero magnam officiis, placeat, beatae assumenda illum soluta quod repellendus facere. Quam perspiciatis quidem totam, provident alias unde?
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsa.
+							</p>
+						</div>
+						<div class="modal-footer">
+							<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat green accent-4 white-text">Aceptar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</main>
+
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="/files/js/jquery.js"></script>
+<script src="/files/js/materialize.min.js"></script>
+<script src="/files/js/init.js"></script>
+<script src="/files/js/animation.js"></script>
+
+</body>
+</html>
