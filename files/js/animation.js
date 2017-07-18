@@ -31,13 +31,6 @@ function fix_navBar(){
 	}, 1000);
 }
 
-// Función para comenzar el recorrido por Multiclase
-
-function get_started(time) {
-	Materialize.toast('Aún no tenemos nada, añadiremos contenido pronto.', time, 'rounded');
-	// Here I going to type the code for get_started button...
-}
-
 // No sirve el botón Enviar
 
 function send_error(time) {
